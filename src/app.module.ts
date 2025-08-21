@@ -16,6 +16,7 @@ import databaseConfig from './config/database.config';
       useFactory: (config: ConfigService) => ({
         uri: config.get<string>('database.uri'),
         dbName: config.get<string>('database.name'),
+        autoIndex: config.get<string>('database.env') !== 'production', // TODO : créé un script qui génère les index pour la prod
       }),
     }),
     ServiceLeadModule,

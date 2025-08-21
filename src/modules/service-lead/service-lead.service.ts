@@ -1,4 +1,4 @@
-import { Injectable, NotFoundException, InternalServerErrorException } from '@nestjs/common';
+import { Injectable, NotFoundException, InternalServerErrorException, BadRequestException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { ServiceLead } from './schemas/serviceLead.schema';
@@ -17,6 +17,9 @@ export class ServiceLeadService {
             const newLead = new this.serviceLeadModel(dto);
             return await newLead.save();
         } catch (error) {
+          if (error.code === 11000) {
+            throw new BadRequestException('Service already exists');
+          }
             console.error(error);
             throw new InternalServerErrorException('Error creating ServiceLead');
         }
