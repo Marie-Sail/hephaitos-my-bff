@@ -89,7 +89,7 @@ npm run start:dev
 
 ## 📡 Example Endpoints
 
-### Users
+### Service Lead
 - `POST /service-lead` → Create a new service
 - `GET /users` → Get all services
 - `GET /service-lead/:id` → Get a service by ID
