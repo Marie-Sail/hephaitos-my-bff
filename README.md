@@ -1,11 +1,18 @@
-# 📦 Hephaistos BFF
+# 📦 Hephaistos my Best Friend Forever
 
 ## 🚀 Description
-**Hephaistos BFF** is a **Backend For Frontend (BFF)** built with [NestJS](https://nestjs.com/) and connected to a **MongoDB** database using **Mongoose**.
+**Hephaistos My BFF** is a **Backend For Frontend (BFF)** built with [NestJS](https://nestjs.com/) and connected to a **MongoDB** database using **Mongoose**.
 
 It provides a secure and scalable REST API that centralizes and exposes the data needed by frontend applications (e.g., dashboards, client-facing apps, admin panels).
 
 The project follows a **modular and maintainable architecture**, inspired by **Clean Architecture** and NestJS best practices.
+
+🚀 This project is also designed as a **learning journey to master NestJS**.  
+It is structured to help understand:
+- How to build a BFF with NestJS  
+- How to integrate MongoDB using Mongoose  
+- How to apply clean coding practices (SOLID, modular design)  
+- How to set up validation, error handling, and best practices in a real-world project
 
 ---
 
