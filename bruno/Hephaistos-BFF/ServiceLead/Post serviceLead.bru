@@ -1,0 +1,24 @@
+meta {
+  name: Post serviceLead
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3000/service-lead
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name" :"S",
+    "titleLead":"meilleur service au monde",
+    "titleContactForm":"Clik c'est bien",
+    "contentfullId":"CzbhuezqDUnfuiezCHINOI"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

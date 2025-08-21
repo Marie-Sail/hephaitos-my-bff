@@ -1,0 +1,24 @@
+meta {
+  name: Update
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:3000/service-lead/68a5dbb21898d3bee5a7bdd5
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name" :"Sfff",
+    "titleLead":"meilleur service au monde",
+    "titleContactForm":"Clik c'est biennnnn",
+    "contentfullId":"CzbhuezqDUnfuiezCHINOI"
+  }
+}
+
+settings {
+  encodeUrl: true
+}
